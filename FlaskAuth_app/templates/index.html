@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="text-center mb-4">
+    <h1>Welcome to AuthApp</h1>
+    <p class="lead">Secure Authentication System using Flask</p>
+</div>
+
+<!-- Carousel -->
+<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner rounded shadow">
+
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0"
+                 class="d-block w-100"
+                 style="height: 450px; object-fit: cover;"
+                 alt="Security">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Secure Authentication</h5>
+                <p>Industry-standard password hashing with bcrypt.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+                 class="d-block w-100"
+                 style="height: 450px; object-fit: cover;"
+                 alt="Technology">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Built with Flask</h5>
+                <p>Lightweight and powerful Python web framework.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                 class="d-block w-100"
+                 style="height: 450px; object-fit: cover;"
+                 alt="Database">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Database Integration</h5>
+                <p>Secure data storage using SQLAlchemy ORM.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+{% endblock %}

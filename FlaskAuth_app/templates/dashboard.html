@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container mt-4">
+
+    <!-- Welcome Section -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="mb-1">Welcome, {{ user.name }}</h3>
+            <p class="text-muted mb-0">You are successfully logged in.</p>
+        </div>
+    </div>
+
+    <!-- Simple Stats Section -->
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <div class="card border-primary h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Profile</h5>
+                    <p class="card-text">View your account details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card border-success h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Settings</h5>
+                    <p class="card-text">Manage your preferences.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card border-warning h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Activity</h5>
+                    <p class="card-text">Check your recent activity.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- User Info Section -->
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h5 class="mb-3">Account Information</h5>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <td>{{ user.name }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ user.email }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
